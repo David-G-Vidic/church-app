@@ -1,0 +1,57 @@
+{
+  "2024-05-29": [
+    {
+      "id": "1",
+      "name": "Youth Group",
+      "height": 50,
+      "day": "2024-05-29",
+      "location": "KCL"
+    }
+  ],
+  "2024-05-30": [
+    {
+      "id": "2",
+      "name": "Church Service",
+      "height": 50,
+      "day": "2024-05-29",
+
+      "location": "Šentjur"
+    }
+  ],
+  "2024-05-31": [
+    {
+      "id": "25",
+      "name": "Church Service",
+      
+      "day": "2024-05-31"
+
+      
+    }
+  ],
+  "2024-06-02": [
+    {
+      "id": "3",
+      "name": "Church Service",
+      "height": 50,
+      "day": "2024-06-02",
+
+      "location": "Ljubljana"
+    },{
+      "id": "4",
+      "name": "Church Service",
+      "height": 50,
+      "day": "2024-06-02",
+
+      "location": "Novo Mesto"
+    }
+  ],
+  "2024-06-09": [
+    {
+      "id": "5",
+      "name": "Church Service",
+      "day": "2024-06-09",
+
+      "location": "Šentjur"
+    }
+  ]
+}
