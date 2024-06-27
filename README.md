@@ -17,5 +17,5 @@ Phase 3
 - [ ] coming soon: available on app stores
 ---
 
-Phase 1 research paper: <br>
-Phase 1 presentation: 
+Phase 1 research paper: <a href="Chruch App Reaserch Paper.pdf" >paper</a> <br>
+Phase 1 presentation: <a href="Church App Presentation.pdf" >presentation</a>
