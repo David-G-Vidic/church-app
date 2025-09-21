@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Image, ImageSourcePropType, Pressable, Alert } from 'react-native';
+import { ScrollView, StyleSheet, Image as ReactImage, ImageSourcePropType, Pressable, Alert } from 'react-native';
 
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
@@ -17,7 +17,7 @@ const F = {
 let gW: number;
 let gH: number;
 
-Image.getSize('../../assets/images/Announcment1.png', (width, height) => {gW = width; gH = height});
+ReactImage.getSize('../../assets/images/Announcment1.png', (width, height) => {gW = width; gH = height});
 
 export default function TabOneScreen() {
   return (
@@ -33,9 +33,9 @@ export default function TabOneScreen() {
         <Text style={styles.event}>Šola Ozdravljenja width = {gW}</Text>
         <Text style={styles.event}>Krst v vodi</Text>
         <Text style={styles.event}>Otvoritev nove zgradbe</Text>
-        <Image source={F.image} style={styles.image} resizeMode='contain' />
+        <ReactImage source={F.image} style={styles.image} resizeMode='contain' />
           <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-        <Image source={F.image} resizeMode='contain' width={'50%'} height={50}/>
+        <ReactImage source={F.image} resizeMode='contain' width={'50%'} height={50}/>
         
         
         
@@ -47,7 +47,7 @@ export default function TabOneScreen() {
         <ExpoImage source={F.image} width={'100%'}  height={undefined}/>
         
         <ExpoImage source={F.image} style= {{display: 'flex', width: '99%', resizeMode:'contain' }} />
-        <Image source={F.image} style= {{ width: '99%', resizeMode:'contain' }} />
+        <ReactImage source={F.image} style= {{ width: '99%', resizeMode:'contain' }} />
         
         <View style={styles.separator} lightColor="blue" darkColor="rgba(255,255,255,0.1)" />
 
@@ -56,7 +56,7 @@ export default function TabOneScreen() {
 
 
         <Link href="/imgModal"  >
-        <Image source={F.image} style= {{ width: '99%', resizeMode:'contain' }} />
+        <ReactImage source={F.image} style= {{ width: '99%', resizeMode:'contain' }} />
         <Text style={styles.event}>Test</Text>
 
         </Link>
@@ -66,7 +66,7 @@ export default function TabOneScreen() {
         <View style={styles.separator} lightColor="blue" darkColor="rgba(255,255,255,0.1)" />
               <Pressable onPress={() => Alert.alert('reservation.name', 'customAlert()')}>
 
-                  <Image source={F.image} style= {{ width: '95%', resizeMode:'contain', aspectRatio: 3/2,backgroundColor: '#0552',}} />
+                  <ReactImage source={F.image} style= {{ width: '95%', resizeMode:'contain', aspectRatio: 3/2,backgroundColor: '#0552',}} />
                   <ExpoImage style={styles.image} source={F.image} resizeMode='contain'/>
 
               </Pressable>
